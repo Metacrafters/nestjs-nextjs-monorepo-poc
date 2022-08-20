@@ -1,0 +1,15 @@
+{
+  "name": "root",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Azim Ahmed",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "yarn workspace api dev",
+    "client": "yarn workspace client dev"
+  }
+}
