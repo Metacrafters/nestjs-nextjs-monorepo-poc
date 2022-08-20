@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/index.ts"],"sourcesContent":["export const Happy = () => console.log('Yes very happy')\n"],"mappings":";AAAO,IAAM,QAAQ,MAAM,QAAQ,IAAI,gBAAgB;","names":[]}

@@ -1,5 +1,5 @@
 {
-  "name": "root",
+  "name": "lms",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Azim Ahmed",
@@ -9,7 +9,12 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "yarn workspace api dev",
-    "client": "yarn workspace client dev"
+    "dev:api": "yarn workspace @lms/api dev",
+    "dev:client": "yarn workspace @lms/client dev",
+    "dev:common": "yarn workspace @lms/common dev",
+    "dev": "concurrently --names 'API,CLIENT,COMMON' -c 'bgBlue.bold,bgMagenta.bold,bgYellow.bold' 'yarn dev:api' 'yarn dev:client' 'yarn dev:common'"
+  },
+  "dependencies": {
+    "concurrently": "^7.3.0"
   }
 }

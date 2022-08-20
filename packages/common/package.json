@@ -1,0 +1,21 @@
+{
+  "name": "@lms/common",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "author": "Azim Ahmed",
+  "license": "MIT",
+  "devDependencies": {
+    "tsup": "^6.2.2"
+  },
+  "tsup": {
+    "entry": ["src/index.ts"],
+    "dts": true,
+    "sourcemap": true,
+    "format": ["esm", "cjs"]
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup"
+  }
+}
